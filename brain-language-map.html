@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="el"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20120%20120%22%20width%3D%22240%22%20height%3D%22240%22%3E%0A%3Cdefs%3E%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%3Cstop%20offset%3D%220%22%20stop-color%3D%22%23f76707%22/%3E%3Cstop%20offset%3D%22.55%22%20stop-color%3D%22%23e64980%22/%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22%237048e8%22/%3E%3C/linearGradient%3E%3C/defs%3E%0A%3Cpath%20d%3D%22M22%2062C10%2040%2028%2014%2054%2014C66%206%2092%2010%2098%2030C112%2038%20112%2060%20100%2070C98%2086%2080%2094%2066%2088L66%20104L48%2088C36%2090%2024%2080%2022%2062Z%22%20fill%3D%22url%28%23g%29%22/%3E%0A%3Cpath%20d%3D%22M40%2040C48%2034%2058%2036%2062%2044M72%2034C80%2032%2088%2038%2088%2046M38%2058C46%2054%2054%2058%2056%2066M70%2058C78%2054%2088%2060%2086%2070%22%20fill%3D%22none%22%20stroke%3D%22%23fff%22%20stroke-opacity%3D%22.45%22%20stroke-width%3D%223%22%20stroke-linecap%3D%22round%22/%3E%0A%3Ctext%20x%3D%2260%22%20y%3D%2276%22%20text-anchor%3D%22middle%22%20font-family%3D%22Georgia%2C%27Times%20New%20Roman%27%2Cserif%22%20font-size%3D%2252%22%20font-weight%3D%22700%22%20fill%3D%22%23fff%22%3E%CE%BB%3C/text%3E%0A%3C/svg%3E%0A">
+<title>Ο Εγκέφαλος και η Γλώσσα</title>
+<style>
+:root{--bg:#f6f4ef;--card:#fff;--tx:#1d2330;--mu:#5b6478;--bd:#ddd8cc;--ac:#3b5bdb;--br:#f3d9d0;color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+body{margin:0;background:var(--bg);color:var(--tx);font-family:system-ui,"Segoe UI",Roboto,sans-serif;line-height:1.5}
+header{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:16px 20px;flex-wrap:wrap}
+h1{font-size:1.5rem;margin:0;background:linear-gradient(90deg,#f76707,#e64980,#7048e8);-webkit-background-clip:text;background-clip:text;color:transparent}header p{margin:2px 0 0;color:var(--mu);font-size:.9rem}
+#lang{background:var(--ac);color:#fff;border:0;border-radius:999px;padding:9px 18px;font-weight:600;cursor:pointer;font-size:.95rem}
+main{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);gap:16px;padding:0 20px 24px;max-width:1150px;margin:auto}
+@media(max-width:820px){main{grid-template-columns:1fr}}
+.card{background:var(--card);border:1px solid var(--bd);border-radius:16px;padding:14px}
+svg{width:100%;height:auto;display:block}
+.reg{cursor:pointer;transition:all .2s;opacity:.92;stroke:#fff;stroke-width:2;filter:saturate(1.1)}
+@keyframes pu{0%,100%{filter:drop-shadow(0 0 3px currentColor) saturate(1.6)}50%{filter:drop-shadow(0 0 16px currentColor) saturate(2)}}
+.reg.on{filter:drop-shadow(0 0 14px #fff) saturate(2)!important}
+#tip{position:fixed;pointer-events:none;background:#111;color:#fff;padding:5px 10px;border-radius:8px;font-size:.82rem;display:none;z-index:9}
+.bar{display:flex;gap:8px;flex-wrap:wrap}.bar button{border:0;border-radius:999px;padding:9px 16px;font-weight:600;cursor:pointer;color:#fff;font-size:.9rem}
+#bj{background:#1c7ed6}#bq{background:#2b8a3e}
+#qb{margin-top:10px;padding:12px;border-radius:12px;background:color-mix(in srgb,#12b886 15%,transparent);display:none;font-size:.95rem}
+.reg:hover,.reg.on{opacity:1;stroke:#fff;stroke-width:4;transform-box:fill-box;transform-origin:center;transform:scale(1.06)}
+.lobe{stroke:#a08a80;stroke-width:1.5}
+.sul{fill:none;stroke:#8d766c;stroke-width:1.6;opacity:.45;stroke-linecap:round}
+.lab{font-size:12px;fill:var(--mu);pointer-events:none}
+#info h2{margin:0 0 2px;font-size:1.2rem}
+.tag{display:inline-block;font-size:.75rem;background:var(--br);padding:2px 10px;border-radius:99px;margin-bottom:8px}
+.box{border-radius:12px;padding:10px 12px;margin-top:10px;font-size:.93rem;border:1px solid var(--bd)}
+.box b{display:block;font-size:.78rem;text-transform:uppercase;letter-spacing:.04em;color:var(--mu);margin-bottom:2px}
+.kid{background:color-mix(in srgb,var(--ac) 12%,transparent)}
+#chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:12px}
+#chips button{border:1px solid var(--bd);background:var(--card);color:var(--tx);border-radius:99px;padding:5px 11px;font-size:.8rem;cursor:pointer}
+#chips button.on{background:var(--ac);color:#fff;border-color:var(--ac)}
+.hint{color:var(--mu);font-size:.85rem;text-align:center;margin:6px 0 0}
+
+body{background:linear-gradient(160deg,#0b1f3a 0%,#12325c 55%,#1b4a7a 100%) fixed;min-height:100vh}
+header p{color:#e7f0ff!important}
+h1{background:none!important;-webkit-background-clip:initial!important;color:#fff!important;text-shadow:none;font-size:1.7rem!important;letter-spacing:.3px}
+@keyframes fl{0%,100%{transform:translateY(0) rotate(-2deg)}50%{transform:translateY(-10px) rotate(2deg)}}
+@keyframes tw{0%,100%{opacity:.15;transform:scale(.6)}50%{opacity:1;transform:scale(1.3)}}
+.logo{filter:drop-shadow(0 6px 10px rgba(0,0,0,.35))}
+.card{border:1px solid rgba(255,255,255,.35);box-shadow:0 8px 24px rgba(0,0,0,.35)}
+#bc{background:radial-gradient(circle at 50% 40%,#fff 0%,#e6eef8 70%,#cfdcee 100%)}
+
+.st{fill:#fff;transform-box:fill-box;transform-origin:center;}
+.bar button,#chips button{transition:transform .15s}.bar button:hover,#chips button:hover{transform:scale(1.04)}
+.bar button{font-size:.9rem!important}
+#lang{background:#e9ecef!important;color:#1d2330!important}
+#chips button{font-weight:600;border:2px solid var(--bd)}
+#info h2{font-size:1.5rem}
+.box{border-width:2px}.kid{background:#e7f0ff!important;border-color:#a5c4f3!important}
+.welcome{text-align:center;padding:10px}.welcome svg{width:150px;height:150px;animation:fl 3s ease-in-out infinite;filter:drop-shadow(0 8px 12px rgba(0,0,0,.3))}
+.welcome h3{margin:8px 0 2px;font-size:1.4rem}
+footer{text-align:center;color:#e7f0ff;padding:0 0 20px;font-size:.85rem;display:flex;gap:8px;justify-content:center;align-items:center}
+#chips button{border-color:var(--c)!important;color:var(--tx)}
+#chips button:hover{background:color-mix(in srgb,var(--c) 30%,#fff)!important}
+#chips button.on{background:var(--c)!important;color:#fff!important;box-shadow:0 0 0 3px color-mix(in srgb,var(--c) 35%,transparent)}
+.reg:hover{filter:drop-shadow(0 0 10px #fff) saturate(1.9)!important}
+</style></head><body>
+<header><div style="display:flex;align-items:center;gap:12px"><svg class="logo" viewBox="0 0 120 120" width="76" height="76" aria-hidden="true"><defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f76707"/><stop offset=".55" stop-color="#e64980"/><stop offset="1" stop-color="#7048e8"/></linearGradient></defs>
+<path d="M22 62C10 40 28 14 54 14C66 6 92 10 98 30C112 38 112 60 100 70C98 86 80 94 66 88L66 104L48 88C36 90 24 80 22 62Z" fill="url(#g)"/>
+<path d="M40 40C48 34 58 36 62 44M72 34C80 32 88 38 88 46M38 58C46 54 54 58 56 66M70 58C78 54 88 60 86 70" fill="none" stroke="#fff" stroke-opacity=".45" stroke-width="3" stroke-linecap="round"/>
+<text x="60" y="76" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="52" font-weight="700" fill="#fff">λ</text>
+</svg><div><h1 id="t"></h1><p id="st"></p></div></div><div class="bar"><button id="bj"></button><button id="bq"></button><button id="lang"></button></div></header>
+<main>
+<div class="card" id="bc">
+<svg class="main" viewBox="0 0 800 480" role="img" aria-label="Brain">
+<defs><radialGradient id="shade" cx="50%" cy="40%" r="70%"><stop offset="0" stop-color="#fff" stop-opacity=".35"/><stop offset="1" stop-color="#6b4a40" stop-opacity=".25"/></radialGradient></defs>
+<path d="M650,440 C640,470 625,478 612,478 L585,478 C590,440 600,415 610,385 Z" fill="#a58be8" class="lobe"/>
+<path class="lobe" fill="#f2a98f" d="M72,272C60,170 150,72 292,54C330,50 352,56 372,62C380,150 392,230 420,300C380,300 340,305 300,312C250,322 200,330 160,332C110,330 76,312 72,272Z"/>
+<path class="lobe" fill="#f1d36b" d="M372,62C470,45 590,70 660,140C640,200 600,240 560,262C520,270 470,285 420,300C392,230 380,150 372,62Z"/>
+<path class="lobe" fill="#7fd0e2" d="M660,140C720,200 745,290 700,350C660,360 620,345 580,330C575,300 560,280 560,262C600,240 640,200 660,140Z"/>
+<path class="lobe" fill="#8fd6a0" d="M160,332C200,330 250,322 300,312C340,305 380,300 420,300C470,285 520,270 560,262C575,300 580,320 580,330C560,380 500,410 430,412C340,414 250,395 200,370C175,355 162,345 160,332Z"/>
+<path class="lobe" fill="#b9a3f0" d="M590,350C640,360 705,368 712,400C702,440 640,458 590,442C560,420 565,380 590,350Z"/>
+<path d="M600,370 C640,380 670,382 700,390 M595,390 C640,398 675,402 705,410 M592,410 C635,418 670,424 700,430" class="sul"/>
+<g id="regs"></g>
+<path d="M160,332C260,318 400,300 560,262" class="sul" style="stroke-width:3;opacity:.7"/>
+<path d="M372,62C380,150 392,230 420,300" class="sul" style="stroke-width:3;opacity:.7"/>
+<path d="M120,150C170,120 240,110 300,125 M100,220C170,200 240,205 300,190 M450,100C500,90 560,100 610,125 M470,170C520,160 580,170 620,190 M280,350C350,365 420,370 500,350 M300,385C370,395 440,395 520,380 M650,230C680,260 685,290 670,320" class="sul"/>
+<rect width="800" height="480" fill="url(#shade)" pointer-events="none" opacity=".5"/>
+<text class="lab" x="90" y="100" id="lF"></text><text class="lab" x="500" y="48" id="lP"></text><text class="lab" x="690" y="130" id="lO"></text><text class="lab" x="300" y="425" id="lT"></text><text class="lab" x="640" y="470" id="lC"></text>
+</svg>
+<p class="hint" id="hint"></p><div id="qb"></div><div id="chips"></div>
+</div>
+<div class="card" id="info"></div>
+</main>
+<div id="tip"></div><script>
+const R={
+broca:{c:"#e8590c",s:'<ellipse cx="235" cy="272" rx="46" ry="28"/>',
+el:{n:"Περιοχή του Broca",l:"Κάτω μετωπιαία έλικα (BA 44/45)",r:"Η «κουζίνα» του λόγου: οργανώνει τη σύνταξη, συνθέτει προτάσεις και προγραμματίζει τις κινήσεις της ομιλίας. Συμμετέχει στην επεξεργασία σύνθετης σύνταξης και στη φωνολογική οργάνωση.",k:"Όταν λες μια ολόκληρη πρόταση, εδώ τακτοποιούνται οι λέξεις σαν τουβλάκια στη σωστή σειρά!",d:"Βλάβη → αφασία Broca: ομιλία αργή, κοπιώδης, με τηλεγραφική σύνταξη, αλλά η κατανόηση διατηρείται σε μεγάλο βαθμό."},
+en:{n:"Broca's area",l:"Inferior frontal gyrus (BA 44/45)",r:"The speech 'kitchen': organizes syntax, builds sentences and plans the movements of speech. Involved in complex syntax and phonological organization.",k:"When you say a whole sentence, this is where words get lined up like building blocks in the right order!",d:"Damage → Broca's aphasia: slow, effortful, telegraphic speech, but comprehension is largely preserved."}},
+wern:{c:"#1c7ed6",s:'<ellipse cx="478" cy="303" rx="52" ry="24"/>',
+el:{n:"Περιοχή του Wernicke",l:"Οπίσθια άνω κροταφική έλικα (BA 22)",r:"Κέντρο κατανόησης του προφορικού λόγου: αντιστοιχίζει τους ήχους με νόημα και μορφές λέξεων (λεξικό και σημασιολογία).",k:"Εδώ καταλαβαίνεις τι σου λένε οι άλλοι. Μετατρέπει τους ήχους σε νόημα!",d:"Βλάβη → αφασία Wernicke: άπταιστος αλλά ακατανόητος λόγος, με νεολογισμούς, και σοβαρό πρόβλημα κατανόησης."}},
+ aud:{c:"#2f9e44",s:'<ellipse cx="372" cy="322" rx="32" ry="14"/>',
+el:{n:"Πρωτογενής ακουστικός φλοιός",l:"Έλικα του Heschl (BA 41/42)",r:"Πρώτος σταθμός του ήχου στον φλοιό. Αναλύει συχνότητες και χρονισμό, δηλαδή τα φωνήματα του λόγου, πριν περάσουν στο Wernicke.",k:"Τα «αυτιά» του εγκεφάλου: ό,τι ακούς φτάνει πρώτα εδώ!",d:"Βλάβη → δυσκολία διάκρισης ήχων, στην ακραία μορφή «καθαρή κώφωση λέξεων»."}},
+ arc:{c:"#f08c00",s:'<path d="M470,282C450,190 310,170 255,255" fill="none" stroke-width="9" stroke-linecap="round" stroke-dasharray="1 0"/>',t:1,
+el:{n:"Τοξοειδής δεσμίδα",l:"Λευκή ουσία, συνδέει Wernicke ↔ Broca",r:"Δέσμη νευρικών ινών, η «εθνική οδός» του λόγου. Επιτρέπει να επαναλαμβάνεις ό,τι ακούς και να συνδέεις κατανόηση με παραγωγή.",k:"Ένα καλώδιο που μεταφέρει μηνύματα από το «καταλαβαίνω» στο «μιλάω»!",d:"Βλάβη → αφασία αγωγιμότητας: καλή κατανόηση και ροή, αλλά αδυναμία επανάληψης λέξεων και φράσεων."}},
+ smg:{c:"#ae3ec9",s:'<ellipse cx="470" cy="228" rx="44" ry="30"/>',
+el:{n:"Υπερχείλια έλικα",l:"Βρεγματικός λοβός (BA 40)",r:"Φωνολογική μνήμη εργασίας και μετατροπή ήχων σε προφορά. Βοηθά να «κρατάς» μια λέξη στο μυαλό.",k:"Το σημειωματάριο που κρατά μια λέξη μέχρι να την πεις ή να τη γράψεις!",d:"Βλάβη → φωνημικές παραφασίες (αντικατάσταση ήχων)."}},
+ ang:{c:"#d6336c",s:'<ellipse cx="568" cy="232" rx="38" ry="30"/>',
+el:{n:"Γωνιώδης έλικα",l:"Βρεγματοϊνιακή περιοχή (BA 39)",r:"Ενώνει γραπτό, ακουστικό και νοηματικό. Κρίσιμη για την ανάγνωση, τη γραφή και τη σημασιολογική ενοποίηση.",k:"Η γέφυρα που ενώνει γράμματα, ήχους και νόημα όταν διαβάζεις!",d:"Βλάβη → αλεξία με αγραφία και δυσκολία ονομασίας."}},
+ vis:{c:"#0c8599",s:'<path d="M650,170C700,210 715,290 688,335C650,335 625,300 630,250C632,215 640,190 650,170Z"/><ellipse cx="560" cy="388" rx="46" ry="14"/>',
+el:{n:"Οπτικός φλοιός και VWFA",l:"Ινιακός λοβός (BA 17/18) και ατρακτοειδής έλικα",r:"Αναλύει το σχήμα των γραμμάτων. Η «περιοχή οπτικής μορφής λέξεων» (VWFA) αναγνωρίζει λέξεις ως εικόνες, βάση της ανάγνωσης.",k:"Τα «μάτια» του εγκεφάλου: διαβάζεις αυτές τις λέξεις με αυτή την περιοχή!",d:"Βλάβη → καθαρή αλεξία: μπορείς να γράψεις αλλά όχι να διαβάσεις."}},
+ atl:{c:"#74b816",s:'<ellipse cx="212" cy="358" rx="44" ry="22"/>',
+el:{n:"Πρόσθιος κροταφικός λοβός",l:"Κροταφικός πόλος (BA 38)",r:"Κέντρο σημασιολογίας: αποθηκεύει το νόημα εννοιών, ανθρώπων και πραγμάτων, ώστε να ξέρεις τι σημαίνει «μήλο».",k:"Η βιβλιοθήκη των εννοιών: εδώ ξέρεις τι είναι ο σκύλος, ακόμη κι αν τον ακούσεις μόνο!",d:"Βλάβη → σημασιολογική άνοια: χάνονται οι έννοιες των λέξεων."}},
+ pfc:{c:"#845ef7",s:'<ellipse cx="170" cy="175" rx="62" ry="56"/>',
+el:{n:"Προμετωπιαίος φλοιός",l:"Μετωπιαίος λοβός (BA 9/46)",r:"Σχεδιασμός, προσοχή και επιλογή της κατάλληλης λέξης. Ελέγχει πότε και πώς μιλάς και ρυθμίζει τη γλώσσα στην κοινωνική επικοινωνία.",k:"Ο «διευθυντής ορχήστρας» που αποφασίζει τι να πεις και τι όχι!",d:"Βλάβη → δυσκολία στην πραγματολογία, στην οργάνωση λόγου και στην έναρξη ομιλίας."}},
+ mot:{c:"#e03131",s:'<path d="M352,72C360,150 374,230 396,296" fill="none" stroke-width="26" stroke-linecap="round"/>',t:1,
+el:{n:"Πρωτογενής κινητικός φλοιός",l:"Προκεντρική έλικα (BA 4)",r:"Στέλνει εντολές στους μύες της γλώσσας, των χειλιών, του λάρυγγα για να παραχθούν οι ήχοι του λόγου.",k:"Ο «τηλεχειριστής» για τα χείλη και τη γλώσσα σου!",d:"Βλάβη → δυσαρθρία (μειωμένη ευκρίνεια ομιλίας)."}},
+ som:{c:"#fab005",s:'<path d="M396,76C404,150 417,224 440,290" fill="none" stroke-width="22" stroke-linecap="round"/>',t:1,
+el:{n:"Σωματοαισθητικός φλοιός",l:"Μετακεντρική έλικα (BA 1-3)",r:"Αισθάνεται τη θέση της γλώσσας και των χειλιών κατά την ομιλία, και βοηθά στην ακριβή άρθρωση.",k:"Νιώθεις τη γλώσσα σου να κινείται όταν λες «λα»: αυτό το μέρος το αισθάνεται!",d:"Βλάβη → δυσκολία ακριβούς άρθρωσης."}}};
+const EN={
+wern:{n:"Wernicke's area",l:"Posterior superior temporal gyrus (BA 22)",r:"The hub for understanding spoken language: links sounds to meaning and word forms (lexicon and semantics).",k:"This is where you understand what others say. It turns sounds into meaning!",d:"Damage → Wernicke's aphasia: fluent but meaningless speech with invented words, and severe comprehension problems."},
+aud:{n:"Primary auditory cortex",l:"Heschl's gyrus (BA 41/42)",r:"The first cortical stop for sound. It analyses frequency and timing, i.e. the phonemes of speech, before passing them to Wernicke's area.",k:"The brain's 'ears': everything you hear arrives here first!",d:"Damage → trouble telling sounds apart; in the extreme, 'pure word deafness'."},
+arc:{n:"Arcuate fasciculus",l:"White matter, links Wernicke ↔ Broca",r:"A bundle of nerve fibres, the language 'highway'. It lets you repeat what you hear and links comprehension to production.",k:"A cable that carries messages from 'I understand' to 'I speak'!",d:"Damage → conduction aphasia: good comprehension and fluency, but cannot repeat words and phrases."},
+smg:{n:"Supramarginal gyrus",l:"Parietal lobe (BA 40)",r:"Phonological working memory and converting sounds into pronunciation. Helps you hold a word in mind.",k:"The notepad that holds a word until you say or write it!",d:"Damage → phonemic paraphasias (sound substitutions)."},
+ang:{n:"Angular gyrus",l:"Parieto-occipital area (BA 39)",r:"Joins written, auditory and meaning information. Crucial for reading, writing and semantic integration.",k:"The bridge joining letters, sounds and meaning when you read!",d:"Damage → alexia with agraphia and naming difficulty."},
+vis:{n:"Visual cortex and VWFA",l:"Occipital lobe (BA 17/18) and fusiform gyrus",r:"Analyses the shapes of letters. The 'visual word form area' (VWFA) recognises words as pictures, the basis of reading.",k:"The brain's 'eyes': you are reading these words with this region!",d:"Damage → pure alexia: can write but cannot read."},
+atl:{n:"Anterior temporal lobe",l:"Temporal pole (BA 38)",r:"The semantic hub: stores the meaning of concepts, people and things, so you know what 'apple' means.",k:"The library of ideas: you know what a dog is here, even if you only hear the word!",d:"Damage → semantic dementia: word meanings are lost."},
+pfc:{n:"Prefrontal cortex",l:"Frontal lobe (BA 9/46)",r:"Planning, attention and choosing the right word. Controls when and how you speak and adapts language to social situations.",k:"The 'conductor' deciding what to say and what not to say!",d:"Damage → trouble with pragmatics, discourse organisation and starting speech."},
+mot:{n:"Primary motor cortex",l:"Precentral gyrus (BA 4)",r:"Sends commands to the muscles of the tongue, lips and larynx to produce speech sounds.",k:"The 'remote control' for your lips and tongue!",d:"Damage → dysarthria (reduced clarity of speech)."},
+som:{n:"Somatosensory cortex",l:"Postcentral gyrus (BA 1-3)",r:"Senses the position of the tongue and lips while speaking and helps precise articulation.",k:"You feel your tongue move when you say 'la': this part feels it!",d:"Damage → difficulty with precise articulation."}};
+Object.entries(EN).forEach(([k,v])=>R[k].en=v);
+const KEL={broca:"Όταν διατυπώνεις μια πρόταση, εδώ οργανώνεται η σειρά των λέξεων.",wern:"Όταν ακούς μια φράση και καταλαβαίνεις τι σημαίνει, εργάζεται αυτή η περιοχή.",aud:"Κάθε ήχος που ακούς φτάνει πρώτα εδώ, πριν αναγνωριστεί ως λόγος.",arc:"Συνδέει την κατανόηση με την παραγωγή, π.χ. όταν επαναλαμβάνεις μια λέξη που άκουσες.",smg:"Κρατά προσωρινά μια λέξη στη μνήμη, π.χ. έναν αριθμό τηλεφώνου που επαναλαμβάνεις από μέσα σου.",ang:"Συνδέει τα γραπτά σύμβολα με τον ήχο και το νόημα όταν διαβάζεις.",vis:"Αναγνωρίζει τα γράμματα και τις λέξεις που βλέπεις γραμμένες.",atl:"Αποθηκεύει τις έννοιες: ξέρεις τι είναι ένας σκύλος είτε τον δεις, είτε τον ακούσεις.",pfc:"Επιλέγει τι θα πεις και πώς, ανάλογα με την περίσταση.",mot:"Ελέγχει τους μύες των χειλιών και της γλώσσας κατά την ομιλία.",som:"Αντιλαμβάνεται πού βρίσκονται τα χείλη και η γλώσσα καθώς μιλάς."};
+const KEN={broca:"When you put a sentence together, this is where word order is organized.",wern:"When you hear a phrase and understand it, this area is at work.",aud:"Every sound you hear arrives here first, before it is recognised as speech.",arc:"Links comprehension with production, e.g. when you repeat a word you just heard.",smg:"Temporarily holds a word in memory, e.g. a phone number you rehearse silently.",ang:"Links written symbols to sound and meaning as you read.",vis:"Recognises the letters and words you see on the page.",atl:"Stores concepts: you know what a dog is whether you see it or hear the word.",pfc:"Chooses what to say and how, depending on the situation.",mot:"Controls the lip and tongue muscles during speech.",som:"Senses where the lips and tongue are as you speak."};
+Object.keys(KEL).forEach(k=>{R[k].el.k=KEL[k];R[k].en.k=KEN[k]});
+const UI={el:{t:"NeuroMap",st:"Ο εγκέφαλος και η γλώσσα · Πάτησε μια περιοχή",b:"English",h:"Αριστερό ημισφαίριο, πλάγια όψη. Το μέτωπο είναι αριστερά.",lb:"Μετωπιαίος",lp:"Βρεγματικός",lo:"Ινιακός",lt:"Κροταφικός",lc:"Παρεγκεφαλίδα",lr:"Ρόλος στη γλώσσα",kd:"Σε απλά λόγια",dd:"Όταν η περιοχή βλάπτεται",st0:"Πάτησε μια περιοχή στον εγκέφαλο για να ξεκινήσεις!"},
+en:{t:"NeuroMap",st:"The brain and language · Tap a region",b:"Ελληνικά",h:"Left hemisphere, side view. The front is on the left.",lb:"Frontal",lp:"Parietal",lo:"Occipital",lt:"Temporal",lc:"Cerebellum",lr:"Role in language",kd:"In plain terms",dd:"When the area is damaged",st0:"Tap a region on the brain to begin!"}};
+let L="el",cur=null;
+const regs=document.getElementById("regs"),chips=document.getElementById("chips");
+Object.entries(R).forEach(([k,v])=>{
+ regs.insertAdjacentHTML("beforeend",`<g class="reg" id="r-${k}" data-k="${k}" fill="${v.c}" stroke="${v.c}" tabindex="0" role="button">${v.s}</g>`);
+ const g=regs.lastChild;
+ if(v.t){g.setAttribute("fill","none");g.firstChild.setAttribute("stroke",v.c)}
+ g.addEventListener("click",()=>sel(k));g.addEventListener("keydown",e=>{if(e.key==="Enter"||e.key===" ")sel(k)});
+ const b=document.createElement("button");b.dataset.k=k;b.style.setProperty("--c",v.c);b.onclick=()=>sel(k);chips.appendChild(b);
+});
+function sel(k){cur=k;render()}
+function render(){
+ const u=UI[L];document.documentElement.lang=L;
+ t.textContent=u.t;st.textContent=u.st;lang.textContent=u.b;hint.textContent=u.h;
+ lF.textContent=u.lb;lP.textContent=u.lp;lO.textContent=u.lo;lT.textContent=u.lt;lC.textContent=u.lc;
+ document.title="NeuroMap · "+(L==="el"?"Ο Εγκέφαλος και η Γλώσσα":"The Brain and Language");
+ chips.querySelectorAll("button").forEach(b=>{b.textContent=R[b.dataset.k][L].n;b.classList.toggle("on",b.dataset.k===cur)});
+ document.querySelectorAll(".reg").forEach(g=>g.classList.toggle("on",g.dataset.k===cur));
+ const i=document.getElementById("info");
+ if(!cur){i.innerHTML=`<p style="color:var(--mu)">${u.st0}</p>`;return}
+ const d=R[cur][L];
+ i.innerHTML=`<span class="tag" style="border-left:6px solid ${R[cur].c}">${d.l}</span><h2>${d.n}</h2>
+ <div class="box"><b>${u.lr}</b>${d.r}</div><div class="box kid"><b>${u.kd}</b>${d.k}</div><div class="box"><b>${u.dd}</b>${d.d}</div>`;
+}
+lang.onclick=()=>{L=L==="el"?"en":"el";render()};
+
+const X={el:{j:"▶ Διαδρομή του λόγου",q:"Κουίζ",jt:["1. Ακουστική αναγνώριση του ήχου","2. Κατανόηση της λέξης","3. Μεταφορά της πληροφορίας","4. Σχεδιασμός της απάντησης","5. Κινητική εκτέλεση της ομιλίας"],qq:"Ποια περιοχή το κάνει αυτό; ",ok:"Σωστά.",no:"Όχι, δοκίμασε ξανά.",sc:"Σκορ",end:"Τέλος κουίζ"},en:{j:"▶ Speech pathway",q:"Quiz",jt:["1. Auditory processing of the sound","2. Comprehension of the word","3. Transfer of the information","4. Planning the response","5. Motor execution of speech"],qq:"Which area does this? ",ok:"Correct.",no:"Not quite, try again.",sc:"Score",end:"End of quiz"}};
+const path=["aud","wern","arc","broca","mot"];let jt=null,quiz=null,score=0;
+const tip=document.getElementById("tip");
+document.querySelectorAll(".reg").forEach(g=>{
+ g.addEventListener("mousemove",e=>{tip.style.display="block";tip.style.left=e.clientX+12+"px";tip.style.top=e.clientY+12+"px";tip.textContent=quiz?"?":R[g.dataset.k][L].n});
+ g.addEventListener("mouseleave",()=>tip.style.display="none")});
+const _r=render;
+render=function(){_r();bj.textContent=X[L].j;bq.textContent=X[L].q;if(quiz)ask(true)};
+function sel(k){
+ if(quiz){const a=quiz.a===k;qb.innerHTML=(a?X[L].ok:X[L].no)+" ";if(a){score++;cur=k;_r();setTimeout(nq,900)}return}
+ clearInterval(jt);cur=k;render()}
+document.querySelectorAll(".reg").forEach(g=>{const n=g.cloneNode(true);g.replaceWith(n);n.addEventListener("click",()=>sel(n.dataset.k));n.addEventListener("keydown",e=>{if(e.key==="Enter"||e.key===" ")sel(n.dataset.k)});
+ n.addEventListener("mousemove",e=>{tip.style.display="block";tip.style.left=e.clientX+12+"px";tip.style.top=e.clientY+12+"px";tip.textContent=quiz?"?":R[n.dataset.k][L].n});n.addEventListener("mouseleave",()=>tip.style.display="none")});
+chips.querySelectorAll("button").forEach(b=>b.onclick=()=>sel(b.dataset.k));
+bj.onclick=()=>{quiz=null;qb.style.display="none";clearInterval(jt);let i=0;const go=()=>{cur=path[i];render();qb.style.display="block";qb.innerHTML="<b>"+X[L].jt[i]+"</b>";i++;if(i>=path.length)clearInterval(jt)};go();jt=setInterval(go,2600)};
+function nq(){const k=Object.keys(R)[Math.floor(Math.random()*Object.keys(R).length)];quiz={a:k};ask()}
+function ask(keep){if(!quiz)return;if(!keep)cur=null;_r();qb.style.display="block";qb.innerHTML="<b>"+X[L].sc+": "+score+"</b><br>"+X[L].qq+"«"+R[quiz.a][L].k+"»";document.getElementById("info").innerHTML=""}
+bq.onclick=()=>{clearInterval(jt);if(quiz){quiz=null;qb.style.display="none";render();return}score=0;nq()};
+render();
+</script></body></html>
